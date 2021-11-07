@@ -1,25 +1,30 @@
+Adaptado de: https://gist.GitHub.com/dasdo/9ff71c5c0efa037441b6
+
 ## Configuración Básica
 
 Configurar Nombre que salen en los commits
 ```ssh
-	git config --global user.name "dasdo"
+	git config user.name "Nombre Apellido"
 ```
 Configurar Email
 ```ssh	
-	git config --global user.email dasdo1@gmail.com
+	git config user.email my.email@example.com
 ```
 Marco de colores para los comando
 ```ssh
-	git config --global color.ui true
+	git config color.ui true
 ```
+
+Nota: Los comandos originales tienen el parámetro "--global", sirve para afectar todos los repositorios Git que el usuario tiene acceso (git config --global ...).
+El parámetro es apropiado si cada colega tiene su propio usuario en el sistema, pero caso contrario es mejor retirar "--global" y repetir el comando para repositorio Git.
 
 ## Iniciando repositorio
 
-Iniciamos GIT en la carpeta donde esta el proyecto
+Iniciamos GIT en la carpeta donde está el proyecto
 ```ssh
 	git init
 ```
-Clonamos el repositorio de github o bitbucket
+Clonamos el repositorio de GitHub, GitLab, etc
 ```ssh
 	git clone <url>
 ```
@@ -29,7 +34,7 @@ Añadimos todos los archivos para el commit
 ```
 Hacemos el primer commit
 ```ssh
-	git commit -m "Texto que identifique por que se hizo el commit"
+	git commit -m "Texto que identifique por qué se hizo el commit"
 ```
 subimos al repositorio
 ```ssh
@@ -39,11 +44,11 @@ subimos al repositorio
 ## GIT CLONE
 
 
-Clonamos el repositorio de github o bitbucket
+Clonamos el repositorio de GitHub, GitLab, etc
 ```ssh
 	git clone <url>
 ```
-Clonamos el repositorio de github o bitbucket ?????
+Clonamos el repositorio de GitHub, GitLab, etc
 ```ssh
 	git clone <url> git-demo
 ```
@@ -71,7 +76,7 @@ Añadimos todos los archivos dentro de un directorio y de una extensión especif
 ```ssh
 	git add docs/*.txt
 ```
-Añadimos todos los archivos dentro de un directorios
+Añadimos todos los archivos dentro de un directorio
 ```ssh
 	git add docs/
 ```
@@ -89,7 +94,7 @@ De haber conflictos los muestra
 ```ssh
 	git commit -a 
 ```
-Agregar al ultimo commit, este no se muestra como un nuevo commit en los logs. Se puede especificar un nuevo mensaje
+Agregar al último commit, este no se muestra como un nuevo commit en los logs. Se puede especificar un nuevo mensaje
 ```ssh
 	git commit --amend -m "Texto que identifique por que se hizo el commit"
 ```
@@ -97,7 +102,7 @@ Agregar al ultimo commit, este no se muestra como un nuevo commit en los logs. S
 
 Subimos al repositorio
 ```ssh
-	git push <origien> <branch>
+	git push <origin> <branch>
 ```
 Subimos un tag
 ```ssh
@@ -130,15 +135,15 @@ Saca un archivo del commit
 ```ssh
 	git reset HEAD <archivo>
 ```
-Devuelve el ultimo commit que se hizo y pone los cambios en staging
+Devuelve el último commit que se hizo y pone los cambios en staging
 ```ssh
 	git reset --soft HEAD^
 ```
-Devuelve el ultimo commit y todos los cambios
+Devuelve el último commit y todos los cambios
 ```ssh
 	git reset --hard HEAD^
 ```
-Devuelve los 2 ultimo commit y todos los cambios
+Devuelve los 2 últimos commit y todos los cambios
 ```ssh
 	git reset --hard HEAD^^
 ```

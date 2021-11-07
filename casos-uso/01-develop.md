@@ -54,8 +54,8 @@ Aquí es posible realizar las siguientes acciones:
 git add archivo-nuevo.txt
 ```
 
- - Esto **no** realiza un commit, solamente prepara el commit.
- - Para revertir la acción, usar `git restore --staged` como indicado, esto hace que el archivo nuevo regrese al estado 'untracked'.
+	* Esto **no** realiza un commit, solamente prepara el commit.
+	* Para revertir la acción, usar `git restore --staged` como indicado, esto hace que el archivo nuevo regrese al estado 'untracked'.
 
 ```
 $ git status
@@ -104,7 +104,7 @@ Este formato es compatible con el comando patch (el uso de patch está fuera del
 git restore Alice.txt
 ```
 
-Este comando va a hacer que el archivo local Alice.txt retorne al estado del último commit. Los cambios realizados el archivo serán **perdidos** y esta acción no puede ser revertida.
+Este comando va a hacer que el archivo local Alice.txt retorne al estado del último commit. Los cambios realizados en la versión del workspace (no comitados) del  archivo serán **perdidos** y esta acción no puede ser revertida.
 
 ## Enviar cambios al repositorio
 

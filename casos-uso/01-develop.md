@@ -54,8 +54,9 @@ Aquí es posible realizar las siguientes acciones:
 git add archivo-nuevo.txt
 ```
 
-	* Esto **no** realiza un commit, solamente prepara el commit.
-	* Para revertir la acción, usar `git restore --staged` como indicado, esto hace que el archivo nuevo regrese al estado 'untracked'.
+Esto **no** realiza un commit, solamente prepara el commit.
+Para revertir la acción, usar `git restore --staged` como indicado, esto hace que el archivo nuevo regrese al estado 'untracked'.
+Después de hacer `git add` del archivo nuevo:
 
 ```
 $ git status

@@ -26,7 +26,7 @@ Marco de colores para los comando
 
 ## Información adicional:
 
-* **[Casos de uso](https://github.com/ginomcevoy/git-cheat-sheet/blob/master/casos-uso.md):** Una lista de escenarios comunes en la interacción con git.
+* **[Casos de uso](https://github.com/ginomcevoy/git-cheat-sheet/blob/master/casos-uso):** Una lista de escenarios comunes en la interacción con git.
 * **[Comandos](https://github.com/ginomcevoy/git-cheat-sheet/blob/master/comandos.md):** Una lista extensa (no exhaustiva) de comandos para git.
 
 ## Referencias

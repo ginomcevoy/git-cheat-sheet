@@ -4,3 +4,5 @@ Alice trabajando...
 
 Alice realizó el primer commit después de escribir esta línea.
 Alice ha trabajado otra vez y realiza otro cambio.
+
+Bob ha editado el archivo de Alice!
